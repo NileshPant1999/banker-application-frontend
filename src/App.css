@@ -1,0 +1,82 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #2bb8df;
+}
+
+.app_top{
+  display: flex;
+  justify-content: space-around;
+}
+
+.tracking-table {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  #title {
+    text-align: center;
+  }
+
+  #employee {
+    border-collapse: collapse;
+    border: 3px solid #ddd;
+  }
+
+  #employee td,
+  #employee th {
+    border: 1px solid #ddd;
+    padding: 12px;
+    @media (max-width: 768px) {
+      font-size: 13px;
+      padding: 5px;
+    }
+  }
+
+  #employee tr:hover {
+    background-color: #ddd;
+  }
+
+  #employee th {
+    padding: 10px;
+    text-align: center;
+    background-color: #2e5bf0;
+    color: white;
+    @media (max-width: 768px) {
+      font-size: 13px;
+    }
+  }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
