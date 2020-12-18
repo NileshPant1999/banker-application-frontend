@@ -22,9 +22,6 @@ function App() {
     console.log(e);
     setValue(e);
   };
-  const handleLimit = (e) => {
-    setLimit(parseInt(e));
-  };
 
   const onChange = (e) => {
     setText(e);
@@ -109,18 +106,10 @@ function App() {
           </DropdownButton>
         </div>
         <div>
-          <DropdownButton
-            alignRight
-            title={limit}
-            id="dropdown-menu"
-            onSelect={handleLimit}
-          >
-            <Dropdown.Item eventKey="1">1</Dropdown.Item>
-            <Dropdown.Item eventKey="2">2</Dropdown.Item>
-            <Dropdown.Item eventKey="3">3</Dropdown.Item>
-            <Dropdown.Item eventKey="5">5</Dropdown.Item>
-            <Dropdown.Item eventKey="10">10</Dropdown.Item>
-          </DropdownButton>
+          <input
+            placeholder="Number of Result"
+            onChange={(event) => setLimit(event.target.value)}
+          />
         </div>
         <div>
           <SearchField
